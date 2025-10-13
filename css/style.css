@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../font/Manrope-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../font/Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../font/Manrope-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../font/Manrope-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../font/Manrope-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../font/Manrope-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../font/Manrope-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 1;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  max-width: 128rem;
+  margin: auto;
+  background-color: #394508;
+}
+.layout header {
+  min-width: 52rem;
+  padding: 0 4rem;
+}
+.layout header > div {
+  width: 35.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.layout header > div .header_nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.layout header > div .header_nav .logo {
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.layout header > div .header_nav .logo img {
+  width: 1.5rem;
+}
+.layout header > div .header_nav .nav_abutton {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1.1rem 1.4rem;
+  background-color: #D2FD9C;
+  border-radius: 0.2rem;
+  color: #000000;
+}
+.layout header > div .header_nav .nav_abutton:hover {
+  background-color: #619111;
+}
+.layout header > div .header_head {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.layout header > div .header_head h1 {
+  font-size: 4.2rem;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+.layout header > div .header_head h1 strong {
+  color: #D2FD9C;
+}
+.layout header > div .header_head h2 {
+  font-size: 1.6rem;
+  color: #CBCBCB;
+}
+.layout header > div .Our_offerings {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.layout header > div .Our_offerings h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #D2FD9C;
+}
+.layout header > div .Our_offerings .Modules {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  height: 12rem;
+}
+.layout header > div .Our_offerings .Modules a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #619111;
+  gap: 1.4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000000;
+  border-radius: 0.4rem;
+}
+.layout header > div .Our_offerings .Modules a:hover {
+  background-color: #D2FD9C;
+  color: #77912A;
+}
+.layout header > div .Our_offerings .Modules a img {
+  width: 3rem;
+}
+.layout header > div .Contact_links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+.layout header > div .Contact_links li a {
+  color: #D2FD9C;
+  font-size: 1.2rem;
+}
+.layout header > div .Contact_links li a:hover {
+  text-decoration: underline;
+}
+.layout .content {
+  flex: 1;
+  background-color: #FFFFFF;
+}
