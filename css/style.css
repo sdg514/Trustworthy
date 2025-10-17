@@ -535,6 +535,9 @@ html {
   .layout .content {
     grid-column: 1/-1;
   }
+  .layout .content .Header_container .Logo_wall .Logos {
+    flex-flow: row wrap;
+  }
   .layout .content .Get_more_done_section .Bento_container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

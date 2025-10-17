@@ -513,6 +513,13 @@ html {
         .content{
             grid-column: 1 / -1;
 
+            .Header_container{
+                .Logo_wall{
+                    .Logos{
+                        flex-flow: row wrap;
+                    }
+                }
+            }
             .Get_more_done_section{
                 .Bento_container{
                     grid-template-columns: 1fr;

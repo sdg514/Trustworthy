@@ -20,3 +20,19 @@ $header3: 2rem;
 $paragraph: 1.6rem;
 $link: 1.2rem;
 $caption: 1rem;
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    $header1: 3.6rem;
+    $header2: 2.8rem;
+    $paragraph: 1.6rem;
+    $link: 1.15rem;
+    $caption: 1.1rem;
+}
+
+@media (max-width: 799px) and (min-width: 320px) {
+    $header1: 2.8rem;
+    $header2: 2.2rem;
+    $paragraph: 1.6rem;
+    $link: 1.1rem;
+    $caption: 1.1rem;
+}
