@@ -5,65 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trustworthy</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- IBM Plex Sans 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Funnel+Display:wght@300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Keyboard&family=Manrope:wght@200..800&family=Nanum+Myeongjo&family=Poor+Story&family=Song+Myung&display=swap" rel="stylesheet">
 
+    <!-- Abhaya Libre 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Dongle&family=Funnel+Display:wght@300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Keyboard&family=Manrope:wght@200..800&family=Nanum+Myeongjo&family=Poor+Story&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <!-- Geist -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Dongle&family=Funnel+Display:wght@300..800&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Keyboard&family=Manrope:wght@200..800&family=Nanum+Myeongjo&family=Poor+Story&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <!-- Radio Canada Big -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Dongle&family=Funnel+Display:wght@300..800&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Keyboard&family=Manrope:wght@200..800&family=Nanum+Myeongjo&family=Poor+Story&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <!-- Saira -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Dongle&family=Funnel+Display:wght@300..800&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Keyboard&family=Manrope:wght@200..800&family=Nanum+Myeongjo&family=Poor+Story&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Saira:ital,wght@0,100..900;1,100..900&family=Song+Myung&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="layout">
         <header>
-            <div>
-                <nav class="header_nav">
-                    <h1 class="logo"><img src="./img/Union.png" alt="로고"/> Etran</h1>
+            <nav class="header_nav">
+                <div class="logo"><img src="img/Union.png" alt="로고"/> Etran</div>
 
-                    <a href="/" class="nav_abutton">Get started</a>
-                </nav>
+                <a href="/" class="a_button">Get started</a>
+            </nav>
 
-                <div class="header_head">
-                    <h1>Money Transfers Made <strong>Simple</strong></h1>
-                    <h2>No personal credit checks or founder guarantee.</h2>
-                </div>
-
-                <div class="Our_offerings">
-                    <h3>Our offerings</h3>
-                    <div class="Modules">
-                        <a href="#section1">
-                            <img src="./img/Icon=Bolt.svg" alt="번개 아이콘">
-                            <p>Instant<br/> Productivity</p>
-                        </a>
-                        <a href="#section2">
-                            <img src="./img/Icon=Globe.svg" alt="지구본 아이콘">
-                            <p>Expense<br/> Management</p>
-                        </a>
-                        <a href="#section3">
-                            <img src="./img/Icon=Shield.svg" alt="방패 아이콘">
-                            <p>Advanced<br/> Technology</p>
-                        </a>
-                    </div>
-                </div>
-
-                <ul class="Contact_links">
-                    <li><a href="/">Contact</a></li>
-                    <li><a href="/">Social</a></li>
-                    <li><a href="/">Address</a></li>
-                    <li><a href="/">Legal Terms</a></li>
-                </ul>
+            <div class="header_head">
+                <h1>Money transfers<br/> made <strong>simple</strong></h1>
+                <h2>No personal credit checks or founder guarantee.</h2>
             </div>
+
+            <div class="Our_offerings">
+                <h3>Our offerings</h3>
+                <div class="Modules">
+                    <a href="#section1">
+                        <img src="img/Icon=Bolt.svg" alt="번개 아이콘">
+                        <p>Instant<br/> Productivity</p>
+                    </a>
+                    <a href="#section2">
+                        <img src="img/Icon=Globe.svg" alt="지구본 아이콘">
+                        <p>Expense<br/> Management</p>
+                    </a>
+                    <a href="#section3">
+                        <img src="img/Icon=Shield.svg" alt="방패 아이콘">
+                        <p>Advanced<br/> Technology</p>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="Contact_links">
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Social</a></li>
+                <li><a href="/">Address</a></li>
+                <li><a href="/">Legal Terms</a></li>
+            </ul>
         </header>
 
         <div class="content">
             <main>
-                <section class="Header_container"></section>
-                <section class="Get_more_done_section" id="section1"></section>
-                <section class="Reliable_app_section" id="section2"></section>
-                <section class="Image_breaker"></section>
-                <section class="First_class_software_section" id="section3"></section>
-                <section class="CTA_section"></section>
+                <section class="Header_container">
+                    <div class="inner">
+                        <img src="img/Header image.png" alt="Person interacting with iPhone"/>
+
+                        <h2>We escalate transfer efficiency<br/> and productivity</h2>
+
+                        <div class="Logo_wall">
+                            <ul class="Logos">
+                                <li><img src="img/blooming.png" alt="blooming logo"/> Blooming</li>
+                                <li><img src="img/buildRight.png" alt="buildRight logo"/> BuildRight</li>
+                                <li><img src="img/flowbot.png" alt="flowbot logo"/> Flowbot</li>
+                                <li><img src="img/expor.png" alt="expor logo"/> Expor</li>
+                                <li><img src="img/Redo.png" alt="Redo logo"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="Get_more_done_section" id="section1">
+                    <div class="inner">
+                        <div class="Get_more_done_section_header section_header">
+                            <h2>Get more done in a week</h2>
+                            <p>Maximize your productivity with smarter tools designed to streamline<br/> your workflow to automate tasks, stay organized</p>
+                        </div>
+
+                        <div class="Bento_container">
+                            <div>
+                                <p>2x</p>
+                                <p>Double Your Productivity</p>
+                            </div>
+                            <div>
+                                <p><img src="img/Bar_graph_icon.png" alt="Bar graph icon"/></p>
+                                <p>Efficiency Increase Per Transfer</p>
+                            </div>
+                            <div>
+                                <p><img src="img/Streamline_finance_icon.png" alt="Streamline finance icon"/></p>
+                                <p>Centralize Your Finances</p>
+                            </div>
+                            <div>
+                                <p><img src="img/130.png" alt="130%"/></p>
+                                <p>More Activity</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="Reliable_app_section" id="section2">
+                    <div class="inner">
+                        <div class="The_Most_Reliable_App_header section_header">
+                            <h2>The Most Reliable App</h2>
+                        </div>
+                        <div class="Section_content">
+                            <div>
+                                <img src="img/Credit_card.png" alt="Credit card"/>
+                                <dl>
+                                    <dt>Scale Your Team, Not Your Card Expenses</dt>
+                                    <dd>Issue virtual and physical cards at no additional cost to support teams of any size.</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <img src="img/Form_image.png" alt="Form image"/>
+                                <dl>
+                                    <dt>Effortless Paper Tracking, Mobile Convenience</dt>
+                                    <dd>Get precise control—at scale—with the ability to lock any card and restrict any type of spend.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="Image_breaker">
+                    <div class="inner">
+                        <img src="img/Person_interacting_with_iPhone.png" alt="Person interacting with iPhone"/>
+                    </div>
+                </section>
+                <section class="First_class_software_section" id="section3">
+                    <div class="inner">
+                        <div class="First_class_software_section_header section_header">
+                            <h2>First class software</h2>
+                            <p>Get real-time insights, seamless transactions, and advanced<br/> tools to manage your wealth effortlessly.</p>
+                        </div>
+
+                        <div class="Icon_section_container">
+                            <div>
+                                <img src="img/Wallet_icon.png" alt="Wallet icon">
+                                <p>Safe Storage</p>
+                            </div>
+                            <div>
+                                <img src="img/Security_icon.png" alt="Security_ con">
+                                <p>Secure</p>
+                            </div>
+                            <div>
+                                <img src="img/Money_graph_icon.png" alt="Money graph icon">
+                                <p>Earn Interest</p>
+                            </div>
+                            <div>
+                                <img src="img/People_icon.png" alt="People icon">
+                                <p>Family Plans</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="CTA_section">
+                    <div class="inner">
+                        <div class="CTA_content_bg">
+                            <div class="CTA_content">
+                                <h3>Download Etran and<br/> manage everything<br/> from your phone.</h3>
+                                <a href="/" class="a_button">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer>
-
+                <div class="Left_side_footer_container">
+                    <img src="img/Union.svg" alt="logo"/>
+                    <img src="img/Etran.svg" alt="Etran, brand name"/>
+                </div>
+                <div class="Right_side_footer_container">
+                    <dl class="Contact_details">
+                        <dt>Contact</dt>
+                        <dd>hello@figma.com</dd>
+                        <dd><a href="/">Instagram</a></dd>
+                        <dd><a href="/">X</a></dd>
+                        <dd><a href="/">LinkedIn</a></dd>
+                    </dl>
+                    <ul class="Terms_and_conditions">
+                        <li><a href="/">Terms & Conditions</a></li>
+                        <li><a href="/">Privacy</a></li>
+                    </ul>
+                </div>
             </footer>
         </div>
     </div>
