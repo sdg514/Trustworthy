@@ -1,3 +1,4 @@
+// Manrope font
 @font-face {
     font-family: 'Manrope';
     src: url('../font/Manrope-Light.woff2') format('woff2');
@@ -44,5 +45,73 @@
     font-family: 'Manrope';
     src: url('../font/Manrope-Bold.woff2') format('woff2');
     font-weight: 700;
+    font-display: swap;
+}
+
+// IBM Plex Sans font
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+// Abhaya Libre font
+@font-face {
+    font-family: 'Abhaya Libre';
+    src: url('AbhayaLibre-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abhaya Libre';
+    src: url('AbhayaLibre-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abhaya Libre';
+    src: url('AbhayaLibre-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abhaya Libre';
+    src: url('AbhayaLibre-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abhaya Libre';
+    src: url('AbhayaLibre-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+// Geist font
+@font-face {
+    font-family: 'Geist';
+    src: url('Geist-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+// Radio Canada Big font
+@font-face {
+    font-family: 'Radio Canada Big';
+    src: url('RadioCanadaBig-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+// Saira font
+@font-face {
+    font-family: 'Saira';
+    src: url('Saira-Thin.woff2') format('woff2');
+    font-weight: 100;
     font-display: swap;
 }

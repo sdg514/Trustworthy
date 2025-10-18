@@ -14,7 +14,7 @@ html {
 // a button 공통
 .a_button{
     font-weight: 400;
-    font-size: $caption;
+    font-size: var(--caption);
     padding: 1.1rem 1.4rem;
     background-color: $accent1;
     border-radius: .2rem;
@@ -34,7 +34,8 @@ html {
     position: relative;
 
     header{
-        padding: 0 4rem;
+        // padding: 0 4rem;
+        padding-left: 4rem;
         position: fixed;
         top: 0;
         width: 35.5rem;
@@ -49,7 +50,7 @@ html {
 
             .logo{
                 font-family: "IBM Plex Sans";
-                font-size: $paragraph;
+                font-size: var(--paragraph);
                 font-weight: 900;
                 color: $bg2;
                 display: flex;
@@ -68,7 +69,7 @@ html {
             flex-direction: column;
             gap: 2rem;
             h1{
-                font-size: $header1;
+                font-size: var(--header1);
                 color: $bg2;
                 line-height: 1.1;
                 text-transform: capitalize;
@@ -79,7 +80,7 @@ html {
             }
             
             h2{
-                font-size: $paragraph;
+                font-size: var(--paragraph);
                 color: $subhead;
             }
         }
@@ -90,7 +91,7 @@ html {
             gap: 2rem;
             h3{
                 font-weight: 500;
-                font-size: $link;
+                font-size: var(--link);
                 color: $accent1;
             }
 
@@ -107,7 +108,7 @@ html {
                     background-color: $accent3;
                     gap: 1.4rem;
                     text-align: center;
-                    font-size: $link;
+                    font-size: var(--link);
                     font-weight: 500;
                     line-height: 1.1;
                     color: $paragraph1;
@@ -134,7 +135,7 @@ html {
             li{
                 a{
                     color: $accent1;
-                    font-size: $link;
+                    font-size: var(--link);
                     
                     &:hover{
                         text-decoration: underline;
@@ -157,12 +158,12 @@ html {
             text-align: center;
 
             h2{
-                font-size: $header1;
+                font-size: var(--header1);
                 color: $heading;
             }
 
             p{
-                font-size: $link;
+                font-size: var(--link);
                 color: $paragraph2;
                 padding-top: 1rem;
             }
@@ -183,7 +184,7 @@ html {
             }
 
             h2{
-                font-size: $header3;
+                font-size: var(--header3);
                 color: $paragraph1;
                 text-align: center;
                 padding: 5rem 0;
@@ -208,7 +209,7 @@ html {
                     &:nth-child(1){
                         font-family: 'Abhaya Libre';
                         font-weight: 400;
-                        font-size: $paragraph;
+                        font-size: var(--paragraph);
                         img{
                             width: 2rem;
                             object-fit: cover;
@@ -217,7 +218,7 @@ html {
                     &:nth-child(2){
                         font-family: 'Geist';
                         font-weight: 500;
-                        font-size: $paragraph;
+                        font-size: var(--paragraph);
                         img{
                             width: 1.6rem;
                             object-fit: cover;
@@ -226,7 +227,7 @@ html {
                     &:nth-child(3){
                         font-family: 'Radio Canada Big';
                         font-weight: 400;
-                        font-size: $paragraph;
+                        font-size: var(--paragraph);
                         img{
                             width: 1.5rem;
                             object-fit: cover;
@@ -235,7 +236,7 @@ html {
                     &:nth-child(4){
                         font-family: 'Saira';
                         font-weight: 400;
-                        font-size: $paragraph;
+                        font-size: var(--paragraph);
                         img{
                             width: 1.7rem;
                             object-fit: cover;
@@ -279,7 +280,7 @@ html {
                     }
 
                     p:nth-child(2){
-                        font-size: $paragraph;
+                        font-size: var(--paragraph);
                     }
                 }
 
@@ -326,7 +327,7 @@ html {
                     }
 
                     dl{
-                        font-size: $link;
+                        font-size: var(--link);
                         dt{
                             color: $heading;
                         }
@@ -339,13 +340,19 @@ html {
         }
 
         .Image_breaker{
+            padding: 10rem 0;
             img{
                 width: 100%;
                 object-fit: cover;
             }
+
+            img:nth-child(2){
+                display: none;
+            }
         }
 
         .First_class_software_section{
+            padding: 4.8rem 0 8rem 0;
             .Icon_section_container{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -363,7 +370,7 @@ html {
                     }
 
                     p{
-                        font-size: $link;
+                        font-size: var(--link);
                         color: $paragraph1;
                         margin-top: 1.5rem;
                     }
@@ -373,8 +380,8 @@ html {
         }
 
         .CTA_section{
+            padding: 5rem 0 10rem 0;
             .CTA_content_bg{
-                background: url();
                 background: url(../img/CTA_content.png) no-repeat center;
                 background-size: cover;
                 height: 35rem;
@@ -386,7 +393,7 @@ html {
                     left: 4rem;
                     bottom: 3.4rem;
                     h3{
-                        font-size: $header2;
+                        font-size: var(--header2);
                         color: $overlay;
                         margin-bottom: 3rem;
                     }
@@ -428,7 +435,7 @@ html {
                 height: 100%;
 
                 .Contact_details{
-                    font-size: $link;
+                    font-size: var(--link);
 
                     dt{
                         color: $paragraph2;
@@ -452,7 +459,7 @@ html {
                 .Terms_and_conditions{
                     line-height: 1.5;
                     a{
-                        font-size: $link;
+                        font-size: var(--link);
                         color: $paragraph2;
 
                         &:hover{
@@ -489,18 +496,34 @@ html {
             grid-column: 1 / -1;
             margin-top: 51.5rem;
             z-index: 1;
+
+            .Header_container{
+                padding: 5rem 0 0 0;
+            }
+
+            .Get_more_done_section{
+                padding: 8rem 0 0 0;
+            }
+
+            .Reliable_app_section{
+                padding: 8rem 0 0 0;
+            }
+
+            .First_class_software_section{
+                padding: 4.8rem 0 0 0;
+            }
         }
     }
 }
 
-@media (max-width: 799px) and (min-width: 320px) {
+@media (max-width: 799px) {
 
     .layout{
         grid-template-columns: 1fr;
 
         header{
             box-sizing: border-box;
-            padding: 1.6rem 1.6rem;
+            padding: 2rem 2rem 3rem 2rem;
             width: 100%;
             max-width: 100%;
             position: static;
@@ -512,8 +535,12 @@ html {
 
         .content{
             grid-column: 1 / -1;
-
+            // 공통 inner
+            .inner{
+                padding: 0 2rem;
+            }
             .Header_container{
+                padding: 5rem 0 0 0;
                 .Logo_wall{
                     .Logos{
                         flex-flow: row wrap;
@@ -527,16 +554,45 @@ html {
                 }
             }
 
-
             .Reliable_app_section{
+                padding: 5rem 0;
                 .Section_content{
                     flex-flow: column nowrap;
                 }
             }
+
+            .Image_breaker{
+                padding: 6rem 0;
+                img:nth-child(1){
+                    display: none;
+                }
+                img:nth-child(2){
+                    display: block;
+                }
+            }
+
+
             .First_class_software_section{
                 .Icon_section_container{
                     grid-template-columns: 0.5fr;
                     justify-content: center;
+                }
+            }
+
+            .CTA_section{
+                padding: 0 0 10rem 0;
+                .CTA_content_bg{
+                    background: url(../img/CTA_content_m.png);
+                    background-size: cover;
+                    .CTA_content{
+                        left: 2rem;
+                    }
+                }
+            }
+            footer{
+                padding: 3rem 2rem;
+                .Right_side_footer_container{
+                    width: auto;
                 }
             }
         }

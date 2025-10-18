@@ -57,6 +57,33 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --header1: 4.2rem;
+  --header2: 3.2rem;
+  --header3: 2rem;
+  --paragraph: 1.6rem;
+  --link: 1.2rem;
+  --caption: 1rem;
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+  :root {
+    --header1: 3.6rem;
+    --header2: 2.8rem;
+    --paragraph: 1.6rem;
+    --link: 1.15rem;
+    --caption: 1.1rem;
+  }
+}
+@media (max-width: 799px) and (min-width: 320px) {
+  :root {
+    --header1: 2.8rem;
+    --header2: 2.2rem;
+    --paragraph: 1.6rem;
+    --link: 1.1rem;
+    --caption: 1.1rem;
+  }
+}
 @font-face {
   font-family: "Manrope";
   src: url("../font/Manrope-Light.woff2") format("woff2");
@@ -99,6 +126,60 @@ a {
   font-weight: 700;
   font-display: swap;
 }
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("IBMPlexSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("AbhayaLibre-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("AbhayaLibre-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("AbhayaLibre-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("AbhayaLibre-ExtraBold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("AbhayaLibre-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("Geist-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Radio Canada Big";
+  src: url("RadioCanadaBig-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saira";
+  src: url("Saira-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
 html {
   font-size: 62.5%;
   font-family: "Manrope";
@@ -108,7 +189,7 @@ html {
 
 .a_button {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: var(--caption);
   padding: 1.1rem 1.4rem;
   background-color: #D2FD9C;
   border-radius: 0.2rem;
@@ -128,7 +209,7 @@ html {
   position: relative;
 }
 .layout header {
-  padding: 0 4rem;
+  padding-left: 4rem;
   position: fixed;
   top: 0;
   width: 35.5rem;
@@ -143,7 +224,7 @@ html {
 }
 .layout header .header_nav .logo {
   font-family: "IBM Plex Sans";
-  font-size: 1.6rem;
+  font-size: var(--paragraph);
   font-weight: 900;
   color: #FFFFFF;
   display: flex;
@@ -161,7 +242,7 @@ html {
   gap: 2rem;
 }
 .layout header .header_head h1 {
-  font-size: 4.2rem;
+  font-size: var(--header1);
   color: #FFFFFF;
   line-height: 1.1;
   text-transform: capitalize;
@@ -170,7 +251,7 @@ html {
   color: #D2FD9C;
 }
 .layout header .header_head h2 {
-  font-size: 1.6rem;
+  font-size: var(--paragraph);
   color: #CBCBCB;
 }
 .layout header .Our_offerings {
@@ -180,7 +261,7 @@ html {
 }
 .layout header .Our_offerings h3 {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: var(--link);
   color: #D2FD9C;
 }
 .layout header .Our_offerings .Modules {
@@ -197,7 +278,7 @@ html {
   background-color: #619111;
   gap: 1.4rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: var(--link);
   font-weight: 500;
   line-height: 1.1;
   color: #000000;
@@ -219,7 +300,7 @@ html {
 }
 .layout header .Contact_links li a {
   color: #D2FD9C;
-  font-size: 1.2rem;
+  font-size: var(--link);
 }
 .layout header .Contact_links li a:hover {
   text-decoration: underline;
@@ -235,11 +316,11 @@ html {
   text-align: center;
 }
 .layout .content .section_header h2 {
-  font-size: 4.2rem;
+  font-size: var(--header1);
   color: #394508;
 }
 .layout .content .section_header p {
-  font-size: 1.2rem;
+  font-size: var(--link);
   color: #5D5D5D;
   padding-top: 1rem;
 }
@@ -255,7 +336,7 @@ html {
      object-fit: cover;
 }
 .layout .content .Header_container h2 {
-  font-size: 2rem;
+  font-size: var(--header3);
   color: #000000;
   text-align: center;
   padding: 5rem 0;
@@ -279,7 +360,7 @@ html {
 .layout .content .Header_container .Logo_wall li:nth-child(1) {
   font-family: "Abhaya Libre";
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--paragraph);
 }
 .layout .content .Header_container .Logo_wall li:nth-child(1) img {
   width: 2rem;
@@ -289,7 +370,7 @@ html {
 .layout .content .Header_container .Logo_wall li:nth-child(2) {
   font-family: "Geist";
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: var(--paragraph);
 }
 .layout .content .Header_container .Logo_wall li:nth-child(2) img {
   width: 1.6rem;
@@ -299,7 +380,7 @@ html {
 .layout .content .Header_container .Logo_wall li:nth-child(3) {
   font-family: "Radio Canada Big";
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--paragraph);
 }
 .layout .content .Header_container .Logo_wall li:nth-child(3) img {
   width: 1.5rem;
@@ -309,7 +390,7 @@ html {
 .layout .content .Header_container .Logo_wall li:nth-child(4) {
   font-family: "Saira";
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--paragraph);
 }
 .layout .content .Header_container .Logo_wall li:nth-child(4) img {
   width: 1.7rem;
@@ -346,7 +427,7 @@ html {
   align-items: flex-end;
 }
 .layout .content .Get_more_done_section .Bento_container > div p:nth-child(2) {
-  font-size: 1.6rem;
+  font-size: var(--paragraph);
 }
 .layout .content .Get_more_done_section .Bento_container div:nth-child(2) img {
   width: 14.2rem;
@@ -382,7 +463,7 @@ html {
      object-fit: cover;
 }
 .layout .content .Reliable_app_section .Section_content div dl {
-  font-size: 1.2rem;
+  font-size: var(--link);
 }
 .layout .content .Reliable_app_section .Section_content div dl dt {
   color: #394508;
@@ -390,10 +471,19 @@ html {
 .layout .content .Reliable_app_section .Section_content div dl dd {
   color: #5D5D5D;
 }
+.layout .content .Image_breaker {
+  padding: 10rem 0;
+}
 .layout .content .Image_breaker img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.layout .content .Image_breaker img:nth-child(2) {
+  display: none;
+}
+.layout .content .First_class_software_section {
+  padding: 4.8rem 0 8rem 0;
 }
 .layout .content .First_class_software_section .Icon_section_container {
   display: grid;
@@ -410,12 +500,14 @@ html {
   transition: all 0.45s ease-in;
 }
 .layout .content .First_class_software_section .Icon_section_container div p {
-  font-size: 1.2rem;
+  font-size: var(--link);
   color: #000000;
   margin-top: 1.5rem;
 }
+.layout .content .CTA_section {
+  padding: 5rem 0 10rem 0;
+}
 .layout .content .CTA_section .CTA_content_bg {
-  background: url();
   background: url(../img/CTA_content.png) no-repeat center;
   background-size: cover;
   height: 35rem;
@@ -428,7 +520,7 @@ html {
   bottom: 3.4rem;
 }
 .layout .content .CTA_section .CTA_content_bg .CTA_content h3 {
-  font-size: 3.2rem;
+  font-size: var(--header2);
   color: #D9D9D9;
   margin-bottom: 3rem;
 }
@@ -464,7 +556,7 @@ html {
   height: 100%;
 }
 .layout .content footer .Right_side_footer_container .Contact_details {
-  font-size: 1.2rem;
+  font-size: var(--link);
 }
 .layout .content footer .Right_side_footer_container .Contact_details dt {
   color: #5D5D5D;
@@ -485,7 +577,7 @@ html {
   line-height: 1.5;
 }
 .layout .content footer .Right_side_footer_container .Terms_and_conditions a {
-  font-size: 1.2rem;
+  font-size: var(--link);
   color: #5D5D5D;
 }
 .layout .content footer .Right_side_footer_container .Terms_and_conditions a:hover {
@@ -516,14 +608,26 @@ html {
     margin-top: 51.5rem;
     z-index: 1;
   }
+  .layout .content .Header_container {
+    padding: 5rem 0 0 0;
+  }
+  .layout .content .Get_more_done_section {
+    padding: 8rem 0 0 0;
+  }
+  .layout .content .Reliable_app_section {
+    padding: 8rem 0 0 0;
+  }
+  .layout .content .First_class_software_section {
+    padding: 4.8rem 0 0 0;
+  }
 }
-@media (max-width: 799px) and (min-width: 320px) {
+@media (max-width: 799px) {
   .layout {
     grid-template-columns: 1fr;
   }
   .layout header {
     box-sizing: border-box;
-    padding: 1.6rem 1.6rem;
+    padding: 2rem 2rem 3rem 2rem;
     width: 100%;
     max-width: 100%;
     position: static;
@@ -535,6 +639,12 @@ html {
   .layout .content {
     grid-column: 1/-1;
   }
+  .layout .content .inner {
+    padding: 0 2rem;
+  }
+  .layout .content .Header_container {
+    padding: 5rem 0 0 0;
+  }
   .layout .content .Header_container .Logo_wall .Logos {
     flex-flow: row wrap;
   }
@@ -542,11 +652,39 @@ html {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+  .layout .content .Reliable_app_section {
+    padding: 5rem 0;
+  }
   .layout .content .Reliable_app_section .Section_content {
     flex-flow: column nowrap;
+  }
+  .layout .content .Image_breaker {
+    padding: 6rem 0;
+  }
+  .layout .content .Image_breaker img:nth-child(1) {
+    display: none;
+  }
+  .layout .content .Image_breaker img:nth-child(2) {
+    display: block;
   }
   .layout .content .First_class_software_section .Icon_section_container {
     grid-template-columns: 0.5fr;
     justify-content: center;
+  }
+  .layout .content .CTA_section {
+    padding: 0 0 10rem 0;
+  }
+  .layout .content .CTA_section .CTA_content_bg {
+    background: url(../img/CTA_content_m.png);
+    background-size: cover;
+  }
+  .layout .content .CTA_section .CTA_content_bg .CTA_content {
+    left: 2rem;
+  }
+  .layout .content footer {
+    padding: 3rem 2rem;
+  }
+  .layout .content footer .Right_side_footer_container {
+    width: auto;
   }
 }
